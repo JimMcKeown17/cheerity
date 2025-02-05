@@ -1,96 +1,103 @@
 .header {
-    background: #151515 url('../images/intro-bg.jpg') no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-
+  background: #151515 url('../images/Cheerity Main.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.header::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.7);
+.header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
 }
 
-.header .text-container{
-    z-index: 10;
+.header .text-container {
+  z-index: 10;
 }
 
 .header .roles {
-    font-family: 'lora-regular', serif;
+  font-family: 'lora-regular', serif;
 }
 
 .header .social {
-    bottom: 50px;
+  bottom: 50px;
 }
 
-.about-img{
-    width: 200px;
+.about-img {
+  width: 200px;
 }
 
-.project:hover{
-    transform: scale(1.05);
-    transition: all 0.5s ease-in-out;
-    opacity: 0.8;
+.project:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
+  opacity: 0.8;
 }
 
-.services{
-    background: url('../images/bg.jpg') no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
+.services {
+  background: url('../images/bg.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
 }
 
 .services::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
 }
 
-.services .container{
-    position: relative;
-    z-index: 10;
+.services .container {
+  position: relative;
+  z-index: 10;
 }
 
-#banner-logo{
-    width: 125px;
+#banner-logo {
+  width: 125px;
 }
 
 .joe-slovo {
-    width: 100%;
+  width: 100%;
 }
 
 #founder-photo {
-    border-radius: 50%;
-    width: 250px; 
-    height: 250px; 
-    object-fit: cover; 
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center 25%;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 767px) {
+  .header .social i {
+    font-size: 30px;
   }
 
-@media(max-width: 767px){
-    .header .social i{
-        font-size: 30px;
-    }
+  .header .roles {
+    font-size: 18px !important;
+  }
 
-    .header .roles {
-        font-size: 18px !important;
-    }
+  .about-content {
+    flex-direction: column;
+  }
 
-    .about-content{
-        flex-direction: column;
-    }
-
-    .stats .stat{
-        border-right: 0px !important;
-        margin-bottom: 40px;
-        border-bottom: var(--bs-dark) solid 1px;
-        padding-bottom: 20px;
-    }
+  .stats .stat {
+    border-right: 0px !important;
+    margin-bottom: 40px;
+    border-bottom: var(--bs-dark) solid 1px;
+    padding-bottom: 20px;
+  }
 }
